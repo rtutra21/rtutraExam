@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/user-api")
 
-
 public class UserController {
     @Autowired
     private UserRepository userRepository;
