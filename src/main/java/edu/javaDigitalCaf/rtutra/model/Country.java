@@ -6,5 +6,4 @@ public enum Country {
     CHINA,
     MEXICO,
     GERMANY;
-
 }
