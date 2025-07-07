@@ -3,7 +3,8 @@ package edu.javaDigitalCaf.rtutra.model;
 public enum Country {
     RUSSIA,
     USA,
-    CANADA,
+    CHINA,
     MEXICO,
-    CHINA
+    GERMANY;
+
 }

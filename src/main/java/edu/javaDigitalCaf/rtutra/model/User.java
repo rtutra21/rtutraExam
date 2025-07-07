@@ -1,15 +1,18 @@
 package edu.javaDigitalCaf.rtutra.model;
 
-
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+
+@Getter
+@Setter
 @Entity
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "users")
-
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,10 +20,13 @@ public class User {
 
     @Column(name = "first_name", nullable = false)
     private String firstName;
-    @Column(name = "age", nullable = false)
+
+    @Column(nullable = false)
     private Integer age;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Country country;
+
 
 }
